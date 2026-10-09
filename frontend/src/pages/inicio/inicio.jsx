@@ -1,18 +1,19 @@
+
 import './inicio.scss';
 
-function Inicio() {
+export default function Inicio() {
   return (
     <div className="principal">
       
       <section className='cima'>
       <img src='./assets/images/logo.png' alt=''></img>
-      <a className='inicio' href=''>Início</a>
-      <a href=''>Como funciona</a>
-      <a href=''>Doações</a>
-      <a href=''>Instituições</a>
+      <p>Início</p>
+      <p>Como funciona</p>
+      <p>Doações</p>
+      <p>Instituições</p>
       <button className='um'>Entrar</button>
       <button className='dois'>Criar conta</button>
-      </section>
+      </section>  
 
     <div className="maior">
       <section className='texto'>
@@ -29,9 +30,22 @@ function Inicio() {
         <button className='doardois'>Preciso de alimentos</button>
       </section>
 
-      
+      <div className='bege'>
+        <div className="icons">
+          <img src='./assets/images/maca.png' alt='' width={150}></img>
+          <img src='./assets/images/pessoas.png' alt='' width={150}></img>
+          <img src='./assets/images/folha.png' alt='' width={150}></img>
+        </div>
+        <div className='testu'>
+          <p>Conecta estabelecimento e instituições</p>
+          <p>Combate a fome e o desperdício</p>
+          <p className='sim'>Fortalece as comunidades</p>
+
+         
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Inicio;
+
