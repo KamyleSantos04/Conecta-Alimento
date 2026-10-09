@@ -1,5 +1,6 @@
 
-import './inicio.scss';
+import './inicio.scss'
+import { Link } from 'react-router-dom';
 
 export default function Inicio() {
   return (
@@ -7,12 +8,12 @@ export default function Inicio() {
       
       <section className='cima'>
       <img src='./assets/images/logo.png' alt=''></img>
-      <p>Início</p>
-      <p>Como funciona</p>
-      <p>Doações</p>
-      <p>Instituições</p>
+      <Link to="/">Início</Link>
+      <Link to="/ComoFunciona">Como funciona</Link>
+      <Link to="/Doacoes">Doações</Link>
+      <Link to="/Instituicoes">Instituições</Link>
       <button className='um'>Entrar</button>
-      <button className='dois'>Criar conta</button>
+      <Link to='/Criar'><button className='dois'>Criar conta</button></Link>
       </section>  
 
     <div className="maior">

@@ -2,15 +2,6 @@
 font-family: Arial, Helvetica, sans-serif;
 background-color: white;
 
-.cima{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.inicio{
-  color: #173B29;
-}
 .juntos{
 color: #008a45;
 
@@ -63,7 +54,18 @@ color: #C44B30;
   margin-top: 40px;
 }
 
+.cima{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+    position: relative;
+  z-index: 100;
+}
+
 .cima a{
+     display: inline-block;
+  cursor: pointer;
+  pointer-events: auto;
   text-decoration: none;
   color: black;
 }

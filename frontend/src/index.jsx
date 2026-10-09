@@ -1,19 +1,32 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+
 import Inicio from './pages/inicio/inicio';
 import CriarConta from './pages/criarconta/criar';
-import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import ComoFunciona from './pages/comofunciona/index';
+import Doacoes from './pages/doacoes/index';
+import Instituicoes from './pages/instituicoes/index';
+import CadastroInstituicao from './pages/contaong/index';
+import Estabelecimento from './pages/contaestabele/index';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-  <Routes>
-    <Route path='/' element={<Inicio/>}/>
-    <Route path='/Criar' element={<CriarConta/>}/>
-  </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/Criar" element={<CriarConta />} />
+        <Route path="/ComoFunciona" element={<ComoFunciona />} />
+        <Route path="/Doacoes" element={<Doacoes />} />
+        <Route path="/Instituicoes" element={<Instituicoes />} />
+        <Route path="/CadastroInstituicao" element={<CadastroInstituicao />} />
+        <Route path="/Estabelecimento" element={<Estabelecimento />}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
