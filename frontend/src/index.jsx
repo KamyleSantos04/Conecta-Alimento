@@ -10,6 +10,7 @@ import Doacoes from './pages/doacoes/index';
 import Instituicoes from './pages/instituicoes/index';
 import CadastroInstituicao from './pages/contaong/index';
 import Estabelecimento from './pages/contaestabele/index';
+import QueroDoar from './pages/querodoar';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ root.render(
         <Route path="/Instituicoes" element={<Instituicoes />} />
         <Route path="/CadastroInstituicao" element={<CadastroInstituicao />} />
         <Route path="/Estabelecimento" element={<Estabelecimento />}/>
+        <Route path='/QueroDoar' element={<QueroDoar />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
