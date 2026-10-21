@@ -1,18 +1,20 @@
-import './inicio.scss';
 
-function Inicio() {
+import './inicio.scss'
+import { Link } from 'react-router-dom';
+
+export default function Inicio() {
   return (
     <div className="principal">
       
       <section className='cima'>
       <img src='./assets/images/logo.png' alt=''></img>
-      <a className='inicio' href=''>Início</a>
-      <a href=''>Como funciona</a>
-      <a href=''>Doações</a>
-      <a href=''>Instituições</a>
+      <Link to="/">Início</Link>
+      <Link to="/ComoFunciona">Como funciona</Link>
+      <Link to="/Doacoes">Doações</Link>
+      <Link to="/Instituicoes">Instituições</Link>
       <button className='um'>Entrar</button>
-      <button className='dois'>Criar conta</button>
-      </section>
+      <Link to='/Criar'><button className='dois'>Criar conta</button></Link>
+      </section>  
 
     <div className="maior">
       <section className='texto'>
@@ -25,13 +27,26 @@ function Inicio() {
     </div>
 
       <section className='botoes'>
-        <button className='doar'>Quero doar</button>
+        <Link to='./QueroDoar'><button className='doar'>Quero doar</button></Link>
         <button className='doardois'>Preciso de alimentos</button>
       </section>
 
-      
+      <div className='bege'>
+        <div className="icons">
+          <img src='./assets/images/maca.png' alt='' width={150}></img>
+          <img src='./assets/images/pessoas.png' alt='' width={150}></img>
+          <img src='./assets/images/folha.png' alt='' width={150}></img>
+        </div>
+        <div className='testu'>
+          <p>Conecta estabelecimento e instituições</p>
+          <p>Combate a fome e o desperdício</p>
+          <p className='sim'>Fortalece as comunidades</p>
+
+         
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Inicio;
+
