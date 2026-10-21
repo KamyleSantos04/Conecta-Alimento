@@ -2,6 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+<<<<<<< HEAD
+import Comeco from './pages/comeco/comeco.jsx'
+=======
 
 import Inicio from './pages/inicio/inicio';
 import CriarConta from './pages/criarconta/criar';
@@ -13,11 +16,15 @@ import Estabelecimento from './pages/contaestabele/index';
 import QueroDoar from './pages/querodoar';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+>>>>>>> 17866595894d1baafca410e954ababe2617929c7
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+<<<<<<< HEAD
+    <Comeco />
+=======
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Inicio />} />
@@ -30,5 +37,6 @@ root.render(
         <Route path='/QueroDoar' element={<QueroDoar />} />
       </Routes>
     </BrowserRouter>
+>>>>>>> 17866595894d1baafca410e954ababe2617929c7
   </React.StrictMode>
 );
