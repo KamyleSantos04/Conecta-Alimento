@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "./index.scss";
 
 const caminhoIcones = "/assets/icons/";
-
 const instituicoes = [
   {
     nome: "Projeto Amor em Ação",
@@ -126,47 +125,41 @@ export default function Instituicoes() {
     setPagina(1);
   }
 
-  return (
-    <main className="institutions-page">
-      <header>
-        <Link to="/" className="institution-brand">
-          <img
-            src={`${caminhoIcones}11.png`}
-            alt="Alimento que Conecta"
-          />
+return (
+  <main className="institutions-page">
+    <header className="institution-header">
+      <Link to="/" className="institution-brand">
+        <img
+          src={`${caminhoIcones}logo.png`}
+          alt="Alimento que Conecta"
+        />
+      </Link>
+
+      <nav>
+        <Link to="/">Início</Link>
+        <Link to="/como-funciona">Como funciona</Link>
+        <Link to="/doacoes">Doações</Link>
+        <Link to="/instituicoes" className="active">
+          Instituições
+        </Link>
+      </nav>
+
+      <div className="institution-actions">
+        <Link to="/login" className="institution-login">
+          Entrar
         </Link>
 
-        <nav>
-          <Link to="/">Início</Link>
-          <Link to="/como-funciona">Como funciona</Link>
-          <Link to="/sobre">Sobre</Link>
-          <Link to="/parceiros">Parceiros</Link>
-          <Link to="/contato">Contato</Link>
-          <Link to="/instituicoes" className="active">
-            Instituições
-          </Link>
-        </nav>
+        <Link to="/cadastro" className="institution-signup">
+          Criar conta
+        </Link>
+      </div>
+    </header>
 
-        <div className="institution-actions">
-          <Link to="/login" className="institution-login">
-            Entrar
-          </Link>
-
-          <Link to="/cadastro" className="institution-signup">
-            Cadastre-se
-          </Link>
-        </div>
-      </header>
 
       <div className="institution-layout">
         <aside className="institution-sidebar">
           <div className="sidebar-heart">
-            <img
-              src={`${caminhoIcones}55.png`}
-              alt=""
-              width="58"
-              height="58"
-            />
+          
           </div>
 
           <h1>Instituições</h1>
